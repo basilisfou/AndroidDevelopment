@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- material design -->
+    <color name="ColorPrimary">#e5665d</color><!-- action bar -->
+    <color name="ColorPrimaryDark">#d0554b</color><!-- status bar-->
+    <color name="ColorSecondaryDark">#ac2f21</color>
+    <color name="textColorPrimary">#ffffffff</color>
+    <color name="windowBackground">#fbe9e7</color>
+    <color name="navigationBarColor">#ffab91</color>
+    <color name="colorAccent">#ffccbc</color>
+    <!-- Log in -->
+    <color name="skip_for_now_color">#f39491</color>
+
+
+    <color name="list_background">#ff434852</color>
+    <color name="list_background_pressed">#ff787b80</color>
+    <color name="list_divider">#ff2d2e2f</color>
+    <color name="counter_text_bg">#ff01c096</color>
+    <color name="tv_menu_background_color">#ff353944</color>
+    <color name="list_item_title">#fff9faf9</color>
+    <color name="Image_view_backgroud">#596274</color>
+    <color name="menu">#353944</color>
+    <color name="divider_menu">#2d2e2f</color>
+    <color name="row_header_menu_background">#96aaba</color>
+    <color name="row_header_menu_title">#828698</color>
+    <color name="row_child_menu_title">#fbfbfa</color>
+    <!-- Double buy now buttons -->
+    <color name = "buy_button">#4baceb</color>
+    <color name = "add_wishlist">#34495e</color>
+    <color name ="remove_wishlist">#c5c5c5</color>
+
+    <color name = "row_menu_selected">#797b80</color> <!--  when an item from side bar is being selected -->
+    <color name = "description_normal">#7C7C7C</color>
+    <color name = "description_bold">#717a86</color>
+    <color name="background_search">#ADADAD</color>
+    <color name="background_textfield_search">#ffe8e8e8</color>
+    <color name = "gadget_item_bg">#F2F2F2</color>
+    <color name = "bg_topbar_our_blog"> #f4ca76</color>
+    <color name="groupIndicator">#ee6357</color>
+    <color name="settings_line_separator">#ADADAD</color>
+    <color name="color_alert_dialog">#bbc7c7c7</color>
+
+    <!--wishlist colors -->
+    <color name="background_unsigned_wish_list">#f4f4f4</color>
+    <color name="login_required">#495966</color>
+    <color name="login_required_header">#8e8e9d</color>
+    <color name="login_required_details">#abaaaf</color>
+
+    <color name="discounts_required">#51a5dc</color>
+    <!-- buttons log in , sign up etc -->
+    <color name="buttons_credentials">#d0534d</color>
+
+    <!-- Picker colors -->
+    <color name="divader_of_picker">#ADADAD</color>
+
+    <!-- searching Field -->
+    <color name="inner_color">#c35048</color>
+    <color name="color_cersor">#f16155</color>
+    <color name="color_nothing_fount">#a1a0a5</color>
+    <color name="color_sorry">#8d8f9c</color>
+
+    <color name="trasparent">#80000000</color>
+
+    <!-- process Dialogs -->
+    <color name="color_hint_change_pass">#c1c4c8</color>
+
+    <color name="spinner_color">#f5f5f5</color>
+    <color name="spinner_border_color">#dcdcde</color>
+    <color name="spinner_header_color">#878c99</color>
+    <color name="spinner_font_color">#444445</color>
+
+    <!-- new feed colors 24/08/2016 -->
+    <color name="divider_color">#ededee</color>
+    <color name="buttons_color">#a2a2a7</color>
+    <color name="categories_color">#afb2b9</color>
+    <color name="divider_color_wish_list_details">#dadadc</color>
+    <color name="new_divider">#e2e2e3</color>
+</resources>

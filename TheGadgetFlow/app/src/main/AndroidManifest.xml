@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.CloudieNetwork.GadgetFlow"
+    android:versionCode="8"
+    android:versionName="2.1">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name="com.example.vasilis.TheGadgetFlow.MyGadgetFlow"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.example.vasilis.TheGadgetFlow.LogInActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.vasilis.TheGadgetFlow.MainActivity"
+            android:label=" "
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.example.vasilis.TheGadgetFlow.ActivityDetails"
+            android:label="@string/title_activity_gadget_flow_detail"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.vasilis.TheGadgetFlow.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.vasilis.TheGadgetFlow.ActivityDetailsPushNotification"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="com.example.vasilis.TheGadgetFlow.ParseDeepLinkActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:scheme="thegadgetflow"  />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.vasilis.TheGadgetFlow.GadgetFlowWeb"
+            android:label="@string/title_activity_gadget_flow_detail"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.example.vasilis.TheGadgetFlow.LogIn2"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.vasilis.TheGadgetFlow.RegisterActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.vasilis.TheGadgetFlow.ResetPasswordActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+        <activity android:name="com.example.vasilis.TheGadgetFlow.EditProfile" android:screenOrientation="portrait"/>
+
+        <meta-data android:name="io.fabric.ApiKey" android:value="63e9b90849aa6dda6011d8f35ad4d7597e0108d4" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="63e9b90849aa6dda6011d8f35ad4d7597e0108d4" />
+        <meta-data android:name="com.example.vasilis.TheGadgetFlow.GlideConfiguration" android:value="GlideModule"/>
+
+    </application>
+
+</manifest>

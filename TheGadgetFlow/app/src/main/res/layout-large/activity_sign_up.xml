@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorPrimary"
+    tools:context="com.example.vasilis.TheGadgetFlow.RegisterActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:id="@+id/ll_toolbar">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/logo_width"
+        android:layout_height="@dimen/logo_height"
+        android:layout_marginTop="@dimen/margin_top_logo"
+        android:src="@drawable/logo"
+        android:id="@+id/logo_sign_up"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_top_edit_text_from_logo"
+        android:layout_below="@+id/logo_sign_up">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/create_account"
+            android:textSize="@dimen/create_your_account_text_size"
+            android:textColor="#fff" />
+    </RelativeLayout>
+    <EditText
+        style="@style/Login_editTexts"
+        android:hint="@string/login_in_screen_2_username"
+        android:layout_below="@+id/logo_sign_up"
+        android:id="@+id/username_log_up"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="@dimen/margin_top_edit_text_from_logo"/>
+
+    <EditText
+        style="@style/Login_editTexts"
+        android:hint="@string/reset_password_email"
+        android:layout_below="@+id/username_log_up"
+        android:lines="2"
+        android:inputType="textEmailAddress"
+        android:id="@+id/email_sign_up"/>
+
+    <EditText
+        android:hint="@string/login_in_screen_2_pass"
+        style="@style/Login_editTexts"
+        android:layout_below="@+id/email_sign_up"
+        android:inputType="textPassword"
+        android:id="@+id/password_sign_up"/>
+
+    <Button
+        style="@style/Login_Buttons"
+        android:layout_marginBottom="@dimen/sign_up_margin_button"
+        android:text="SIGN UP"
+        android:id="@+id/sign_up_bt"
+        android:layout_below="@+id/password_sign_up"
+        android:layout_marginRight="@dimen/margin_edit_text_left_right"
+        android:layout_marginEnd="@dimen/margin_edit_text_left_right"
+        android:layout_marginStart="@dimen/margin_edit_text_left_right"
+        android:layout_marginLeft="@dimen/margin_edit_text_left_right"
+        />
+
+
+</RelativeLayout>

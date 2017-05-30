@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_tablet_gadget_item">
+
+    <ImageView
+        android:id="@+id/imgItem"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/transparent"
+        android:visibility="visible" />
+
+    <View
+        android:layout_below="@+id/imgItem"
+        android:id="@+id/stroke_bottom_iv"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e2e2e3"/>
+
+    <!-- ********************************* info ********************************************* -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/stroke_bottom_iv"
+        android:id="@+id/layout_info">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="11dp"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_gadget_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:singleLine="true"
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/title"
+                android:ellipsize="end"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="4dp"
+                android:id="@+id/tv_gadget_category"
+                android:textColor="@color/categories_color"
+                android:layout_toRightOf="@+id/tv_gadget_price"
+                android:paddingLeft="7dp"
+                android:textSize="12sp"
+                android:text="category"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <!--**************************************************** buttons **********************************************************************************-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_below="@+id/layout_info"
+        android:orientation="horizontal">
+        <!-- ********************************** save ***************************************************** -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@drawable/divider_buttons_home_left"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:id="@+id/btn_save_feed">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="14dp"
+                    android:id="@+id/imageViewSave"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:layout_marginRight="3dp"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_save"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:text="@string/gadget_save_feed"
+                android:textColor="@color/buttons_color"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+        <!-- ********************************** button  share ***************************************************** -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/divider_buttons_home_right"
+            android:id="@+id/btn_share_feed">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/share_feed"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginEnd="1dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:id="@+id/tv_share"
+                    android:gravity="center"
+                    android:text="@string/gadget_share_feed"
+                    android:textColor="@color/buttons_color"
+                    android:textSize="12sp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginLeft="1dp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

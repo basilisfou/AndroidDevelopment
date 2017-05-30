@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vasilis.TheGadgetFlow.LogIn2"
+    android:background="@color/ColorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:id="@+id/ll_toolbar">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/logo_width"
+        android:layout_height="@dimen/logo_height"
+        android:layout_marginTop="@dimen/margin_top_logo"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo_sign_in" />
+
+    <EditText
+        android:hint="@string/login_in_screen_2_username"
+        android:layout_below="@+id/logo_sign_in"
+        android:id="@+id/username_log_in"
+        android:layout_marginTop="@dimen/margin_top_edit_text_from_logo"
+        android:inputType="textEmailAddress"
+        style="@style/Login_editTexts"/>
+
+    <EditText
+        android:hint="@string/login_in_screen_2_pass"
+        android:layout_below="@+id/username_log_in"
+        android:inputType="textPassword"
+        android:id="@+id/password_log_in"
+        style="@style/Login_editTexts"/>
+
+    <Button
+        android:text="LOG IN"
+        style="@style/Login_Buttons"
+        android:textStyle="bold"
+        android:id="@+id/login_button"
+        android:layout_below="@+id/password_log_in"
+        android:layout_marginRight="@dimen/margin_edit_text_left_right"
+        android:layout_marginEnd="@dimen/margin_edit_text_left_right"
+        android:layout_marginStart="@dimen/margin_edit_text_left_right"
+        android:layout_marginLeft="@dimen/margin_edit_text_left_right"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login_in_screen_2_reset"
+        android:textStyle="bold"
+        android:textSize="@dimen/reset_pass_text_size"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/reset_pass_margin_bottom"
+        android:textColor="#fff"
+        android:id="@+id/reset_pass"/>
+
+</RelativeLayout>

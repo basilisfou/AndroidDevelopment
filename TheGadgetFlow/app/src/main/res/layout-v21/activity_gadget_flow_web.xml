@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/wvBuyItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbarThumbHorizontal="@drawable/scrollbar_vertical_thumb"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/black"
+        >
+
+        <ImageButton
+            android:id="@+id/btnPrev"
+            android:layout_width="@dimen/top_bar_item_width"
+            android:layout_height="@dimen/top_bar_item_height"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/icon_btn_prev"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="@dimen/top_bar_item_width"
+            android:layout_height="@dimen/top_bar_item_height"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/top_bar_menu_padding_right"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:layout_toRightOf="@+id/btnPrev"
+            android:src="@drawable/icon_btn_next" />
+
+        <ProgressBar
+            android:id="@+id/pbLoadingContentWebView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btnReload"
+            android:background="@android:color/transparent"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/btnReload"
+            android:layout_width="@dimen/top_bar_item_width"
+            android:layout_height="@dimen/top_bar_item_height"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/btnOpenIn"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_btn_reload"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/btnOpenIn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_external_link"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

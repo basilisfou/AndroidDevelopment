@@ -1,0 +1,102 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="shadow_width">1dp</dimen>
+    <dimen name="slidingmenu_offset">50dp</dimen>
+    <!-- the sliding menu offset-->
+    <dimen name="top_bar_height">50dp</dimen>
+    <dimen name="top_bar_item_width">30dp</dimen>
+    <dimen name="top_bar_item_height">30dp</dimen>
+    <dimen name="top_bar_menu_padding_left">10dp</dimen>
+    <dimen name="top_bar_menu_padding_right">15dp</dimen>
+    <dimen name="card_insets">4dp</dimen>
+
+    <dimen name="top_bar_title_margin_left">50dp</dimen>
+    <dimen name="top_bar_title_margin_right">10dp</dimen>
+
+    <dimen name="top_bar_title_font_size">18sp</dimen>
+    <dimen name="row_header_menu_font_size">14sp</dimen>
+    <dimen name="row_child_menu_font_size">14sp</dimen>
+
+    <dimen name="row_child_menu_width_image">25dp</dimen>
+    <dimen name="row_child_menu_height_image">25dp</dimen>
+    <dimen name="row_child_menu_margin_left">10dp</dimen>
+
+    <dimen name="row_header_menu_height">50dp</dimen>
+    <dimen name="row_child_menu_height">50dp</dimen>
+    <dimen name="row_header_menu_padding_left">10dp</dimen>
+    <dimen name="row_header_menu_padding_top">5dp</dimen>
+    <dimen name="row_header_menu_padding_bottom">5dp</dimen>
+    <dimen name="row_child_menu_padding">10dp</dimen>
+
+    <dimen name="divider_item_height">10dp</dimen>
+    <dimen name="divider_menu_height">1dp</dimen>
+    <!-- anchor -->
+    <dimen name="top_margin_anchor">6dp</dimen>
+    <dimen name="card_inserts">0dp</dimen>
+
+    <!-- ******************************************************  Login - sing up - reset password in screens *************************************-->
+    <dimen name="space_between_buttons">18dp</dimen>
+    <dimen name="size_of_text">24sp</dimen>
+    <dimen name="margin_left_right">30dp</dimen>
+    <dimen name="layout_height">80dp</dimen>
+    <dimen name="layout_height_large">180dp</dimen>
+    <dimen name="margin_top_edit_text_from_logo">120dp</dimen>
+    <dimen name="padding_edit_texts">20dp</dimen>
+
+    <dimen name="logo_width">500dp</dimen>
+    <dimen name="logo_height">108dp</dimen>
+    <dimen name="margin_top_logo_login_activity">120dp</dimen>
+    <dimen name="margin_top_logo">200dp</dimen>
+
+
+    <!-- @+id/app_description Login Activity-->
+    <dimen name="margin_top_app_desc">72dp</dimen>
+    <dimen name="size_sp_app_desc">26sp</dimen>
+
+    <!-- Linear Layout "@+id/ll_log_in" Login Activity-->
+    <dimen name="margin_left_right_ll_log_in">60dp</dimen>
+    <dimen name="margin_right_left_log_in_sign_up_button">6dp</dimen>
+    <dimen name="skip_for_now_size_text">24sp</dimen>
+
+
+    <!-- Login 2 -->
+    <dimen name="margin_edit_text_left_right">50dp</dimen>
+    <dimen name="reset_pass_text_size">26sp</dimen>
+    <dimen name="reset_pass_margin_bottom">50dp</dimen>
+
+    <!-- Reset password -->
+    <dimen name="should_text_size">26sp</dimen>
+    <dimen name="should_margin">40dp</dimen>
+
+    <!--sing up activity -->
+    <dimen name="create_your_account_text_size">26sp</dimen>
+    <dimen name="sign_up_margin_button">50sp</dimen>
+
+
+    <!-- ************************************************* ACTIVITY DETAILS **************************** -->
+    <dimen name="gadget_title_text_size">17sp</dimen>
+    <dimen name="gadget_description_text_size">13sp</dimen>
+    <dimen name="margin_left_right_buttons_activity_detail">23dp</dimen>
+
+    <!-- ************************************************ Categories **************************************************** -->
+    <dimen name="category_item_height">150dp</dimen>
+    <dimen name="category_item_margin_left_from_name">30dp</dimen>
+    <dimen name="category_item_name_text_size">19sp</dimen>
+    <dimen name="category_item_number_of_items_text_size">16sp</dimen>
+    <dimen name="category_item_arrow_size">30dp</dimen>
+
+    <!-- ************************************************* row_item************************************* -->
+    <dimen name="gadget_title_padding_bottom">15dp</dimen>
+
+    <!-- ************************************************* Dialogs************************************* -->
+    <dimen name="margin_edit_text_dialogs">40dp</dimen>
+    <dimen name="padding_edit_text_dialogs">10dp</dimen>
+
+    <bool name="isTabletX">true</bool>
+    <bool name="isTabletl">false</bool>
+
+    <dimen name="vertical_offset">35dp</dimen>
+
+</resources>

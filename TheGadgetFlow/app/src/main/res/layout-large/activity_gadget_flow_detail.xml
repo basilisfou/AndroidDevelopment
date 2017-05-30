@@ -1,0 +1,217 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollable"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="450dp" />
+
+                <View.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp"
+                    android:layout_alignParentBottom="true"/>
+
+                <ProgressBar
+                    android:id="@+id/pbLoadingDescription"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlDetails"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/transparent"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/lnDetails"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@android:color/transparent"
+                    android:visibility="invisible"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+                    <!-- title of the Gadget -->
+                    <TextView
+                        android:id="@+id/tvGadgetTitle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textColor="@color/description_bold"
+                        android:background="@android:color/transparent"
+                        android:textSize="@dimen/gadget_title_text_size"
+                        android:textStyle="bold" />
+                    <!--
+                                        <android.support.design.widget.TabLayout
+                                            android:id="@+id/tabs"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            app:tabMode="scrollable"/>
+
+                                        <android.support.v4.view.ViewPager
+                                            android:id="@+id/viewpager_description"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0px"
+                                            android:layout_weight="1"
+                                            android:background="@android:color/white" />
+                    -->                 <!-- Description of the Gadget -->
+                    <TextView
+                        android:id="@+id/tvDescriptionItem"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="13dp"
+                        android:textSize="@dimen/gadget_description_text_size"
+                        android:layout_marginTop="15dp"
+                        android:lineSpacingExtra="5dp"
+                        android:background="@android:color/transparent"
+                        android:text="TextView"
+                        android:textColor="@color/description_normal" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <!-- buttons buy now - add to wishlist -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="@dimen/margin_left_right_buttons_activity_detail"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_buttons_activity_detail"
+                    android:layout_weight="1"
+                    android:id="@+id/btnBuyNow"
+                    android:background="@drawable/selector_btn_default"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="13dp"
+                            android:src="@drawable/buy"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginTop="2dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:id="@+id/tv_buy_now"
+                            android:text="@string/gadget_details_buy"
+                            android:textColor="@android:color/white"
+                            android:textSize="13sp"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!-- button  add to wish list-->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:id="@+id/btnaddtowishlist"
+                    android:layout_marginRight="@dimen/margin_left_right_buttons_activity_detail"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="@dimen/margin_left_right_buttons_activity_detail"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/selector_btn_default_2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:id="@+id/btnaddtowishlist_iv"
+                            android:src="@drawable/not_added"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginEnd="4dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btnaddtowishlist_tv"
+                            android:gravity="center"
+                            android:text="@string/gadget_details_save_wishlist"
+                            android:textColor="@android:color/white"
+                            android:textSize="13sp"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:textStyle="bold"/>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

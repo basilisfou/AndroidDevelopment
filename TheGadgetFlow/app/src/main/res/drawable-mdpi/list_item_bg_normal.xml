@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- state the list item state when normal -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <gradient
+        android:startColor="@color/list_background"
+        android:endColor="@color/list_background"
+        android:angle="90" />
+
+
+</shape>

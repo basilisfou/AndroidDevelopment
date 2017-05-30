@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- Wish list public-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/ll_wl_st">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/description_normal"
+                    android:textSize="15sp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/edit_profile_wish_list"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/textView_setting" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/switch_settings"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/settings_line_separator"/>
+            </RelativeLayout>
+            <!-- Full name -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/ll_fill_name">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/description_normal"
+                    android:textSize="15sp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/edit_profile_fullname"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/textView_fullname" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="15sp"
+                    android:id="@+id/text_view_alterName"
+                    android:textStyle="italic"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/textView_fullname"
+
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/settings_line_separator"/>
+            </RelativeLayout>
+            <!-- Change e-mail -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/ll_change_email">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/description_normal"
+                    android:textSize="15sp"
+                    android:text="@string/edit_profile_change_mail"
+                    android:id="@+id/text_view_change_email"/>
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/arrow_change_mail"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/right_arrow"
+                    android:layout_centerVertical="true"
+                    android:background="#fff"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/settings_line_separator"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/ll_change_pass">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/description_normal"
+                    android:textSize="15sp"
+                    android:text="@string/edit_profile_change_pass"
+                    android:id="@+id/text_view_change_password"/>
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/arrow_change_pass"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/right_arrow"
+                    android:layout_centerVertical="true"
+                    android:background="#fff"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/settings_line_separator"/>
+            </RelativeLayout>
+            <!--                                 facebook                                          -->
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/ll_facebook">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/description_normal"
+                android:textSize="15sp"
+                android:text="Facebook"
+                android:hint="Change Facebook"
+                android:textColorHint="@color/description_normal"
+                android:id="@+id/text_view_facebook"/>
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/arrow_ll_facebook"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/right_arrow"
+                android:layout_centerVertical="true"
+                android:background="#fff"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/settings_line_separator"/>
+        </RelativeLayout>
+            <!-- Twitter -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/ll_twitter">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColorHint="@color/description_normal"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/description_normal"
+                    android:textSize="15sp"
+                    android:hint="Change Twitter"
+                    android:text="Twitter"
+                    android:id="@+id/text_view_twitter"/>
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/arrow_ll_twitter"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/right_arrow"
+                    android:layout_centerVertical="true"
+                    android:background="#fff"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/settings_line_separator"/>
+            </RelativeLayout>
+            <!-- edit location -->
+            <!--
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/ll_Edit_Location">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/description_normal"
+                    android:textSize="18sp"
+                    android:text="@string/edit_location"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/text_view_Edit_Location"/>
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/arrow_ll_Edit_Location"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/right_arrow"
+                    android:layout_centerVertical="true"
+                    android:background="#fff"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/settings_line_separator"/>
+            </RelativeLayout> -->
+            <!--edit Website URL -->
+            <!--
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/ll_Edit_website">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/description_normal"
+                    android:textSize="18sp"
+                    android:text="@string/edit_web"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/text_view_Edit_website"/>
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/arrow_ll_Edit_website"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/right_arrow"
+                    android:layout_centerVertical="true"
+                    android:background="#fff"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/settings_line_separator"/>
+            </RelativeLayout> -->
+            <!--
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/ll_change_about">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/description_normal"
+                    android:textSize="18sp"
+                    android:text="@string/about_user"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/text_view_change_about"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:id="@+id/text_view_alterAbout"
+                    android:textStyle="italic"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/text_view_change_about"
+                    android:layout_marginTop="10dp"
+                    />
+            </RelativeLayout> -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

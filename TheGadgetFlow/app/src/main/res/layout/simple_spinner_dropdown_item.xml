@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/dropdown_spinner_background"
+    android:layout_height="35dp">
+        <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/spinnerDropDownItemStyle"
+            android:singleLine="true"
+            android:id="@+id/spinner_drop_down"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/spinner_font_color"
+            android:layout_marginLeft="20dp"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+            android:ellipsize="marquee">
+        </TextView >
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/color_hint_change_pass"/>-->
+
+</RelativeLayout >
